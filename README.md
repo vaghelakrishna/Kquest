@@ -1,57 +1,16 @@
-# 🌟 kQuest
+# React + Vite
 
-A clean personal progress tracker where you log your daily journey — DSA, money, fitness, todos, and a short blog for each day.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## 📌 What This Website Does
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-* Add your **daily post** (title, content, todos, progress)
-* Track your **DSA**, **Money**, and **Physique** progress through progress bars
-* View your entire **journey timeline**
-* Keep a record of what you did every day
+## React Compiler
 
----
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## ⚙️ How It Works
+## Expanding the ESLint configuration
 
-* You add your daily details through a simple admin form
-* Backend saves everything as JSON in MongoDB
-* Frontend fetches and displays your days as journey posts
-* Each day includes:
-
-  * DSA solved
-  * Money earned
-  * Workout status
-  * Todos (done / not done)
-  * Full daily blog
-
-Clean. Minimal. Just your journey.
-
----
-
-## 🛠️ Technologies Used
-
-### **Frontend**
-
-* React
-* TailwindCSS
-* Axios
-
-### **Backend**
-
-* Node.js
-* Express.js
-* MongoDB (Mongoose)
-
----
-
-## 📂 Project Structure
-
-```
-backend/   → APIs + Database
-frontend/  → UI + Components
-```
-
----
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
