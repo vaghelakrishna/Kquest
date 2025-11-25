@@ -7,7 +7,7 @@ const blogs = [
     mood: "🔥",
     money: 0,
     dsa: 0,
-    desc: "Coming back to track | The Quest | Ramxcodes | Ramkrishna Swarnkar",
+    desc: "Coming back to track | The Quest | Krishnaxcodes | Krishna Vaghela",
     date: "February 24, 2025",
   },
   {
@@ -16,7 +16,7 @@ const blogs = [
     mood: "🔥",
     money: 0,
     dsa: 0,
-    desc: "Coming back to track | The Quest | Ramxcodes | Ramkrishna Swarnkar",
+    desc: "Coming back to track | The Quest | Krishnaxcodes | Krishna Vaghela",
     date: "February 24, 2025",
   },
   {
@@ -25,7 +25,7 @@ const blogs = [
     mood: "😭",
     money: 0,
     dsa: 0,
-    desc: "Still a Long Way to Go. | The Quest | Ramxcodes | Ramkrishna Swarnkar",
+    desc: "Still a Long Way to Go. | The Quest | Krishnaxcodes | Krishna Vaghela",
     date: "February 23, 2025",
   },
   {
@@ -98,7 +98,7 @@ export default function BlogsJourney() {
     <main
       className="w-full min-h-screen bg-white text-black
       bg-[radial-gradient(circle,#00000008_1px,transparent_1px)]
-      [background-size:20px_20px]"
+      bg-size[20px_20px] px-2"
     >
       <div className="container mx-auto max-w-5xl py-16">
 

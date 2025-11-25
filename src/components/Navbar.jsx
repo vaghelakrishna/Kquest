@@ -81,7 +81,7 @@ export default function Navbar() {
           {/* Mobile Menu Button (UNCHANGED) */}
           <button
             onClick={() => setOpen(!open)}
-            className="inline-flex items-center justify-center h-10 p-0 text-black hover:opacity-70 md:hidden"
+            className="inline-flex items-center justify-center h-10 p-0 text-white hover:bg-black/50 md:hidden"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

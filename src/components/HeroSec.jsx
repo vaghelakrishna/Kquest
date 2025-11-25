@@ -6,7 +6,7 @@ export default function HeroSec() {
       {/* subtle grid */}
       <div className="relative bg-white 
         bg-[radial-gradient(circle,#0000000a_1px,transparent_1px)]
-        [background-size:20px_20px]
+        bg-size-[20px_20px]
       ">
 
         <section className="container mx-auto py-24 md:py-32 text-center space-y-8">
