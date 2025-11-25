@@ -7,9 +7,9 @@ import Navbar from './components/Navbar'
 import HeroSec from './components/HeroSec'
 import Footer from './components/Footer'
 import BlogsJourney from './components/BlogsJourney'
+import Quest from './components/quest'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -38,7 +38,9 @@ function App() {
 
       <Navbar />
       <HeroSec />
-      <BlogsJourney/>
+      <BlogsJourney />
+      
+      {/* <Quest/> */}
       <Footer/>
     </>
   )

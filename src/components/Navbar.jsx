@@ -12,20 +12,22 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-40 border-b bg-background px-2">
+    <header className="sticky top-0 z-40 border-b border-[#e5e5e5] bg-white px-2">
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
+        
+        {/* Logo */}
         <div className="flex items-center space-x-3">
-          <a className="flex items-center space-x-1 text-primary" href="/">
-            <p>🔥</p>
-            <span className="font-bold">The Quest</span>
+          <a className="flex items-center space-x-1 text-black" href="/">
+            <span className="font-bold">KQuest</span>
           </a>
         </div>
 
         <div className="flex items-center space-x-5 md:space-x-6">
+
           {/* Desktop Nav */}
           <nav className="hidden items-center gap-6 md:flex">
             <a
-              className="font-normal hover:text-primary transition-colors flex items-center text-primary"
+              className="font-normal flex items-center text-black hover:opacity-70 transition"
               href="/blog"
             >
               <svg
@@ -44,11 +46,12 @@ export default function Navbar() {
                 <path d="M4 4a16 16 0 0 1 16 16"></path>
                 <circle cx="5" cy="19" r="1"></circle>
               </svg>
+
               <span>Blog</span>
             </a>
 
             <a
-              className="font-normal hover:text-primary transition-colors flex items-center text-muted-foreground"
+              className="font-normal flex items-center text-[#7a7a7a] hover:text-black transition"
               href="/quest"
             >
               <svg
@@ -70,14 +73,15 @@ export default function Navbar() {
                 <path d="M15 13v2"></path>
                 <path d="M9 13v2"></path>
               </svg>
+
               <span>Quest</span>
             </a>
           </nav>
 
-          {/* -------- MOBILE BUTTON (UNCHANGED) -------- */}
+          {/* Mobile Menu Button (UNCHANGED) */}
           <button
-            onClick={() => setOpen(!open)}   // <--- ADDED
-            className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 p-0 text-primary hover:bg-transparent hover:text-primary md:hidden"
+            onClick={() => setOpen(!open)}
+            className="inline-flex items-center justify-center h-10 p-0 text-black hover:opacity-70 md:hidden"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -95,20 +99,22 @@ export default function Navbar() {
               <path d="M17 18H3"></path>
               <path d="M21 6H3"></path>
             </svg>
-            <span className="sr-only">Menu</span>
           </button>
+
         </div>
       </div>
 
-      {/* -------- MOBILE MENU -------- */}
+      {/* MOBILE MENU */}
       <div
         ref={mobileRef}
         className="overflow-hidden transition-all duration-300 md:hidden"
         style={{ maxHeight: mobileMaxH }}
       >
         <nav className="flex flex-col px-4 py-3 space-y-3">
-          <a href="/blog" className="text-primary">Blog</a>
-          <a href="/quest" className="text-muted-foreground">Quest</a>
+          <a href="/blog" className="text-black hover:opacity-70">Blog</a>
+          <a href="/quest" className="text-[#7a7a7a] hover:text-black transition">
+            Quest
+          </a>
         </nav>
       </div>
     </header>

@@ -1,10 +1,21 @@
-import React from 'react'
+import React from "react";
 
-function Footer() {
+export default function Footer() {
   return (
-    <footer>
-<footer class=" container border-t border-t-secondary/60 py-3 text-center"><p class="text-xs text-muted-foreground">© 2025 Created by <a target="_blank" rel="noreferrer" class="text-primary" href="https://github.com/vaghelakrishna">krishna</a> </p></footer>    </footer>
-  )
+    <footer className="w-full bg-white border-t border-neutral-200 py-6">
+      <div className="container mx-auto text-center">
+        <p className="text-sm text-neutral-600">
+          © 2025 Created by
+          <a
+            href="https://github.com/vaghelakrishna"
+            target="_blank"
+            rel="noreferrer"
+            className="text-black font-medium hover:underline ml-1"
+          >
+            @krishna
+          </a>
+        </p>
+      </div>
+    </footer>
+  );
 }
-
-export default Footer
