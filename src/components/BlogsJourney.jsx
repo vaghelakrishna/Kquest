@@ -2,7 +2,7 @@ import React from "react";
 
 const blogs = [
   {
-    day: 9,
+    day: 1,
     title: "Coming back to track",
     mood: "🔥",
     money: 0,
@@ -100,7 +100,7 @@ export default function BlogsJourney() {
       bg-[radial-gradient(circle,#00000008_1px,transparent_1px)]
       bg-size[20px_20px] px-2"
     >
-      <div className="container mx-auto max-w-5xl py-16">
+      <div className="container mx-auto max-w-5xl py -16">
 
         {/* Heading */}
         <header className="text-center space-y-2">
